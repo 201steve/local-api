@@ -2,10 +2,12 @@ import { useEffect, useState, useRef } from "react";
 import { useRouter } from "next/router";
 import MsgItem from "./MsgItem";
 import MsgInput from "./MsgInput";
-import fetcher from "../fetcher";
+import fetcher from "../queryClient";
 import useInfiniteScroll from "../hooks/useInfiniteScroll";
 
 const MsgList = ({ smsgs, users }) => {
+  return null;
+
   const {
     query: { userId = "" },
   } = useRouter();
